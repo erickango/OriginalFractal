@@ -5,7 +5,7 @@ public void setup(){
 public void draw(){
 //	background(0);
     fill((float)(Math.random() * 256), (float)(Math.random() * 256), (float)(Math.random() * 256));
-	myFractal(300, 300, 300);
+	myFractal(300, 400, 400);
 //	myFractal(125 , 250 , 280);
 //	myFractal(375 , 250 , 280);
 //	myFractal(0 , 0 , 280);
@@ -20,7 +20,7 @@ public void myFractal(int x, int y, int siz){
 /*	triangle(x - siz / 2, y + siz / 2, x + siz/2, y + siz/2, x, y-siz/2);
 	ellipse(x, y, siz, siz/2);
 	rect(x - siz / 2, y + siz / 2, siz/2, siz/2); */
-	if(siz > 10){
+	if(siz > 20){
 		pushMatrix();
 		translate(x - siz / 2, y);
 		rotate(-PI/4);
@@ -34,5 +34,7 @@ public void myFractal(int x, int y, int siz){
 		popMatrix();
 
 
+
 	}
+
 }
